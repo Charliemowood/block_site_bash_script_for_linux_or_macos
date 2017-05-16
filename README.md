@@ -6,30 +6,32 @@ The purpose of this script is to make quick changes to the `/etc/hosts` network 
 
 1. Open Terminal and clone repository.
 
-... `git clone git@github.com:Charliemowood/block_site_bash_script_for_linux_or_macos.git`
+* `git clone git@github.com:Charliemowood/block_site_bash_script_for_linux_or_macos.git`
 
 2. Change directory.
 
-...`cd block_site_bash_script_for_linux_or_macos.git`
+* `cd block_site_bash_script_for_linux_or_macos.git`
 
 3. Open the script in favorite editor or open in file system i.e finder in MacOS.
 
-... `atom blocker.sh`
+* `atom blocker.sh`
 
 4. Modify script as per sites you would like to block. To block example.com uncomment the following code. Change only the 'example' which should match the url you are trying to block.
 
-`# sudo sh -c "echo '127.0.0.1 www.example.com' >> /etc/hosts"
+```
+# sudo sh -c "echo '127.0.0.1 www.example.com' >> /etc/hosts"
 # sudo sh -c "echo '127.0.0.1 example.com' >> /etc/hosts"
 # sudo sh -c "echo '::1 www.example.com' >> /etc/hosts"
-# sudo sh -c "echo '::1 example.com' >> /etc/hosts"`
+# sudo sh -c "echo '::1 example.com' >> /etc/hosts"
+```
 
 5. Make the script executable on your system.
 
-... `chmod +x blocker`
+* `chmod +x blocker`
 
 6. Run the script.
 
-... `bash blocker.sh`
+* `bash blocker.sh`
 
 7. Type in your administrator password.
 
